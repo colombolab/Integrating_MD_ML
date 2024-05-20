@@ -1,0 +1,12 @@
+100ns NPT MD production, save coordinates and write RST less often than usual ; light restraint on ligand and adjacent amino acids
+&cntrl
+ imin=0, irest=1, ntx=5, iwrap=1,
+ nstlim=50000000, dt=0.002,
+ ntpr=500, ntwx=25000, ioutfm=1, ntwr=-10000000,
+ ntc=2, ntf=2, cut=8.0,
+ ntb=2, ntp=1, pres0=1.0, taup=1.0,
+ ntt=3, tempi=300.0, temp0=300.0, gamma_ln=1.0, ig=-1,
+ ntr=1, restraint_wt=0.25, restraintmask='(:242-244@CA)|(:300)',
+/
+
+
